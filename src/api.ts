@@ -52,7 +52,7 @@ interface PostDetailResponse {
   slug: string;
   content: LocalizedText;
   category: CategoryResponse;
-  tags: TagResponse[];
+  tags?: TagResponse[] | null;
   is_draft: boolean;
   has_english: boolean;
   published_at: string | null;
@@ -66,7 +66,7 @@ interface PostListResponse {
     title: string;
     slug: string;
     category: { slug: string; name: string };
-    tags: { slug: string; name: string }[];
+    tags?: { slug: string; name: string }[] | null;
     is_draft: boolean;
     published_at: string;
     updated_at: string;
