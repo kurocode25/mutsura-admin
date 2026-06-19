@@ -117,6 +117,7 @@ const PostDetail = () => {
           const data = response.data;
           setPost({
             ...data,
+            tags: data.tags || [],
             published_at: data.published_at ? new Date(data.published_at) : null,
             created_at: data.created_at ? new Date(data.created_at) : undefined,
             updated_at: data.updated_at ? new Date(data.updated_at) : undefined
@@ -320,7 +321,7 @@ const PostDetail = () => {
           <Select
             labelId="tags-select-label"
             multiple
-            value={post.tags.map((t: { slug: string }) => t.slug)}
+            value={(post.tags || []).map((t: { slug: string }) => t.slug)}
             onChange={handleTagChange}
             input={<OutlinedInput id="select-multiple-chip" label="Tags" />}
             renderValue={(selected) => (
