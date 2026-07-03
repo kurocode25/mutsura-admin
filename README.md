@@ -85,6 +85,14 @@ src/
 └── contexts/       # React Context (AuthContext, etc.)
 ```
 
+## Compatibility with Mutsura API
+
+The compatibility between this admin panel and [mutsura-api](https://github.com/kurocode25/mutsura-api) is as follows.
+
+| Admin Version | Required API Version |
+| ------------- | -------------------- |
+| v0.1.x        | >= v0.2.0            |
+
 ## License
 
 See [LICENSE](./LICENSE), [THIRD_PARTY_LICENSES.md](./THIRD_PARTY_LICENSES.md).

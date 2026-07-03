@@ -85,6 +85,14 @@ src/
 └── contexts/       # React Context (AuthContextなど)
 ```
 
+## Mutsura-APIとの互換性
+
+[mutsura-api](https://github.com/kurocode25/mutsura-api)との互換性は以下の通りです。
+
+| Admin Version | Required API Version |
+| ------------- | -------------------- |
+| v0.1.x        | >= v0.2.0            |
+
 ## ライセンス
 
 [LICENSES](./LICENSE), [THIRD_PARTY_LICENSES.md](./THIRD_PARTY_LICENSES.md) を参照してください。
